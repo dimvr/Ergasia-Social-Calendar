@@ -1,4 +1,4 @@
-<!doctype html>
+ο»Ώ<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -8,6 +8,7 @@
 <body>
 <?php
 	$con=mysqli_connect("localhost","root","","calendar");
+	mysqli_set_charset($con, "utf8");
 	$onoma = $_POST['onoma'];
 	$epitheto = $_POST['epitheto'];
 	$imgennisis = $_POST['imgennisis'];
@@ -20,12 +21,13 @@
 	$sql = "INSERT INTO user(onoma, epitheto, imgennisis, filo, mail, username, kodikos) VALUES('$onoma', '$epitheto', '$imgennisis', '$filo', '$mail', '$username', '$password');";
 
 	$res = mysqli_query($con,$sql);
-	
+	/* mysql_query("SET NAMES 'utf8'");
+mysql_query("SET CHARACTER SET 'utf8'"); */
 	if($res){
-		echo '<script language="javascript">alert("Η καταχώρηση νέου χρήστη έγινε με επιτυχία."); document.location="index.php";</script>';
+		echo '<script language="javascript">alert("Ξ— ΞΊΞ±Ο„Ξ±Ο‡ΟΟΞ·ΟƒΞ· Ξ½Ξ­ΞΏΟ… Ο‡ΟΞ®ΟƒΟ„Ξ· Ξ­Ξ³ΞΉΞ½Ξµ ΞΌΞµ ΞµΟ€ΞΉΟ„Ο…Ο‡Ξ―Ξ±."); document.location="index.php";</script>';
 	}
 	else{
-		echo '<script language="javascript">alert("Υπήρξε πρόβλημα. Προσπαθήστε ξανά."); document.location="index.php";</script>';
+		echo '<script language="javascript">alert("Ξ¥Ο€Ξ®ΟΞΎΞµ Ο€ΟΟΞ²Ξ»Ξ·ΞΌΞ±. Ξ ΟΞΏΟƒΟ€Ξ±ΞΈΞ®ΟƒΟ„Ξµ ΞΎΞ±Ξ½Ξ¬."); document.location="index.php";</script>';
 	}
 ?>
 </body>
