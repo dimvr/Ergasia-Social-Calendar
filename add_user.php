@@ -21,8 +21,6 @@
 	$sql = "INSERT INTO user(onoma, epitheto, imgennisis, filo, mail, username, kodikos) VALUES('$onoma', '$epitheto', '$imgennisis', '$filo', '$mail', '$username', '$password');";
 
 	$res = mysqli_query($con,$sql);
-	/* mysql_query("SET NAMES 'utf8'");
-mysql_query("SET CHARACTER SET 'utf8'"); */
 	if($res){
 		echo '<script language="javascript">alert("Η καταχώρηση νέου χρήστη έγινε με επιτυχία."); document.location="index.php";</script>';
 	}
