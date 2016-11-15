@@ -29,7 +29,7 @@ $server = 'http://easymail.gr/lina/prod'; //Μεταβλητή με το root do
 			<div class="col-lg-8">
 				<ul class="register-links pull-right">
 					<li><a href="<?php echo $server; ?>/pages/how-it-works.php">Πώς λειτουργεί</a></li>
-					<li><a href="#">Σχετικά με εμάς</a></li>
+					<li><a href="<?php echo $server; ?>/pages/about_us.php">Σχετικά με εμάς</a></li>
 					<li><a href="<?php echo $server; ?>/pages/login.php">Σύνδεση</a></li>
 					<li><a href="<?php echo $server; ?>/pages/register.php">Εγγραφή</a></li>
 				</ul>
