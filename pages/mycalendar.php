@@ -1,6 +1,6 @@
 <?php
 //if($_SESSION['loggedin'] != true):
-	//header('Location: http://easymail.gr/lina/prod/' );
+	//header('Location: http://easymail.gr/lina/version2/' );
 //endif;
 /*
  * Σελίδα mycalendar.php
@@ -23,3 +23,14 @@ include( '../template-parts/header.php' ); ?>
 
 <?php
 include( '../template-parts/footer.php' );
+
+
+/*
+
+<?php
+session_start();
+print "hello $_SESSION[username].";
+?>
+
+
+*/

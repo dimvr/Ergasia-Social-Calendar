@@ -29,3 +29,17 @@ include( '../template-parts/header.php' ); ?>
 
 <?php
 include( '../template-parts/footer.php' );
+
+/*
+
+<?php
+// check the $_REQUEST[username] & $_REQUEST[pass]
+print "Welcome $_REQUEST[username].";
+session_start();
+$_SESSION['username']= $_REQUEST['username;
+
+print "<a href="mycalendar.php\">Goto next page</a>.";
+?>
+
+
+*/
