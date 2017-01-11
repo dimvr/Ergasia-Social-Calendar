@@ -1,0 +1,32 @@
+/* Τα βασικά CSS της εφαρμογής μας */
+.top-bar-area{
+    background:#454545;
+    color:#fefefe;
+    padding:10px;
+}
+.top-bar-area a{
+    color:#fefefe;
+}
+.top-bar-area a:hover{
+    text-decoration: none;
+    color:#2aabd2;
+}
+.top-bar-area h2{
+    margin:0;
+}
+.register-links{
+    padding:0;
+    margin: 8px 0 0 0;
+    list-style-type: none;
+}
+.register-links li{
+    display:inline-block;
+    margin-left:10px;
+}
+
+/**
+* Main content container
+**/
+.main-content-container{
+    padding:20px 0;
+}
